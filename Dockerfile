@@ -6,4 +6,4 @@ RUN set -x; apk add --no-cache wget \
     && speedtest --accept-license --accept-gdpr > /dev/null \
     && apk del wget
 
-ENTRYPOINT ["speedtest","--progress=on"]
+ENTRYPOINT ["speedtest","--accept-gdpr","--progress=on"]
